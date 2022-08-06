@@ -6,7 +6,7 @@ import Homepage from "./Components/Homepage";
 function App() {
   return (
     <div className="app bg-primary">
-      <nav className="app-navbar flex bg-primary justify-center align-center">
+      <nav className="app-navbar fixed top-0 z-10 w-screen flex bg-primary justify-center align-center">
         <Navbar />
       </nav>
 

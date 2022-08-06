@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Homepage() {
   return (
-    <div className="flex items-center justify-center bg-primary relative h-90v">
+    <div className="flex items-center justify-center bg-primary relative h-screen">
 
-      <div className="flex flex-col text-center w-90v mb-8">
-        <h1 className="text-white text-4xl mb-5 font-livvic font-bold">
+      <div className="flex flex-col items-center w-screen text-center mb-8">
+        <h1 className="text-white text-4xl mb-5 w-55v font-livvic font-bold">
           Find the best{" "}
           <span className="homepage__title__word text-lightred">talent</span>
         </h1>
-        <p className="text-white text-center text-sm leading-7 font-livvic">
+        <p className="text-white text-center text-sm w-78v leading-7 font-livvic">
           Finding the right people and building high performing teams can be
           hard. Most companies aren’t tapping into the abundance of global
           talent. We’re about to change that.
