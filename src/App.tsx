@@ -1,13 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import Navbar from './Components/Navbar'
+import Navbar from "./Components/Navbar";
+import Homepage from "./Components/Homepage";
 
 function App() {
   return (
-    <nav className='flex bg-primary justify-center align-center'>
-      <Navbar />
-    </nav>
-  )
+    <div className="app bg-primary">
+      <nav className="app-navbar flex bg-primary justify-center align-center">
+        <Navbar />
+      </nav>
+
+      <section className="app-homepage">
+        <Homepage />
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;
