@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: '#014E56',
         lightred: '#F67E7E',
+        darkgreen: '#012F34',
       },
       height: {
         "10v": "10vh",
@@ -35,6 +36,13 @@ module.exports = {
       },
       fontFamily: {
         'livvic': ['Livvic', 'sans-serif'],
+      },
+      fontSize: {
+        '32': '32px',
+        '15': '15px',
+      },
+      inset: {
+        '100px': '100px'
       }
     },
   },

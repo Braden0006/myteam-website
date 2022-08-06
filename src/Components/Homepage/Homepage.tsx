@@ -17,7 +17,7 @@ export default function Homepage() {
       </div>
 
       <svg
-        className="absolute bottom-0"
+        className="absolute bottom-0 w-screen"
         xmlns="http://www.w3.org/2000/svg"
         width="358"
         height="100"
