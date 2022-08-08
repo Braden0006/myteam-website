@@ -43,6 +43,7 @@ module.exports = {
         'livvic': ['Livvic', 'sans-serif'],
       },
       fontSize: {
+        '40': '2.5rem',
         '32': '32px',
         '15': '15px',
       },
