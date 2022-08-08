@@ -4,7 +4,7 @@ import AboutDirectorsCards from "../AboutDirectorsCards/AboutDirectorsCards";
 
 export default function AboutDirectors() {
   return (
-    <div className="about-direct relative z-10 flex flex-col items-center bg-lightergreen">
+    <div className="about-direct relative flex flex-col items-center bg-lightergreen">
       <svg
         className="about-direct__pattern absolute -top-26 -left-28"
         xmlns="http://www.w3.org/2000/svg"
