@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Homepage2 from "./Components/Homepage2/Homepage2";
 import Homepage3 from "./Components/Homepage3/Homepage3";
+import ContactSection from "./Components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Homepage />
         <Homepage2 />
         <Homepage3 />
+        <ContactSection />
       </section>
     </div>
   );
