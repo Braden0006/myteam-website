@@ -2,7 +2,12 @@ import React from "react";
 
 import Menu from "../Menu/Menu";
 
-export default function Navbar() {
+interface Props {
+  menu: boolean;
+  setMenu: (menu: boolean) => void;
+}
+
+export default function Navbar(props: Props) {
   return (
     <div className="flex py-8 items-center w-11/12 justify-between">
       <svg
@@ -19,13 +24,18 @@ export default function Navbar() {
           fill="white"
         />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
+      <svg
+        onClick={() => props.setMenu(!props.menu)}
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="17"
+      >
         <g fill="#FFF" fillRule="evenodd">
           <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
         </g>
       </svg>
 
-      <Menu />
+      {props.menu ? <Menu menu={props.menu} setMenu={props.setMenu} /> : null}
     </div>
   );
 }

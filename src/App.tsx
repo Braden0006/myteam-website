@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -15,11 +15,22 @@ import AboutClients from "./Components/AboutClients/AboutClients";
 
 import Contact from "./Components/Contact/Contact";
 
-function App() {
+interface Props {
+  menu: boolean;
+  setMenu: (menu: boolean) => void;
+}
+
+const App: FC = () => {
+  const [menu, setMenu] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setMenu(!menu);
+  }
+
   return (
-    <div className="app bg-primary overflow-hidden">
+    <div className="app bg-primary overflow-x-hidden">
       <nav className="app-navbar absolute top-0 z-10 w-screen flex bg-primary justify-center align-center">
-        <Navbar />
+        <Navbar menu={menu} setMenu={setMenu} />
       </nav>
 
       <Routes>

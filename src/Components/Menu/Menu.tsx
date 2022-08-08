@@ -1,10 +1,18 @@
 import React from "react";
 
-export default function Menu() {
+import { motion } from "framer-motion";
+
+interface Props {
+  menu: boolean;
+  setMenu: (menu: boolean) => void;
+}
+
+export default function Menu(props: Props) {
   return (
-    <div className="menu-background fixed flex justify-end h-screen w-screen top-0 left-0 bottom-0 right-0 bg-transparentblack">
+    <motion.div className="menu-background fixed flex justify-end h-screen w-screen top-0 left-0 bottom-0 right-0 bg-transparentblack">
       <div className="menu-overlay relative w-8/12 flex flex-col items-center bg-menugreen">
         <svg
+          onClick={() => props.setMenu(!props.menu)}
           className="absolute right-4 top-10"
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -26,7 +34,12 @@ export default function Menu() {
           contact us
         </button>
 
-        <svg className="absolute bottom-0 -right-26" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+        <svg
+          className="absolute bottom-0 -right-26"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+        >
           <g fill="none" fillRule="evenodd">
             <path fill="#2C6269" d="M100 100H0V0h100z" />
             <path
@@ -40,6 +53,6 @@ export default function Menu() {
           </g>
         </svg>
       </div>
-    </div>
+    </motion.div>
   );
 }
