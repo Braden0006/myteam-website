@@ -40,6 +40,7 @@ function App() {
               <About />
               <AboutDirectors />
               <AboutClients />
+              <ContactSection />
             </section>
           }
         />
