@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 
 import About from "./Components/About/About";
 import AboutDirectors from "./Components/AboutDirectors/AboutDirectors";
+import AboutClients from "./Components/AboutClients/AboutClients";
 
 function App() {
   return (
@@ -37,9 +38,8 @@ function App() {
           element={
             <section className="app-about">
               <About />
-              <div>
-                <AboutDirectors />
-              </div>
+              <AboutDirectors />
+              <AboutClients />
             </section>
           }
         />
