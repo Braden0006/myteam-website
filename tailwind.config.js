@@ -7,10 +7,12 @@ module.exports = {
         primary: '#014E56',
         darkergreen: '#012F34',
         lightergreen: '#004047',
+        menugreen: '#2C6269',
         lightred: '#F67E7E',
         darkgreen: '#012F34',
         cyan: '#79C8C7',
         transparentwhite: '#FFFFFF01',
+        transparentblack: '#000000a6',
       },
       height: {
         "10v": "10vh",
