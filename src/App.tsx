@@ -25,7 +25,7 @@ const App: FC = () => {
 
   const toggleMenu = () => {
     setMenu(!menu);
-  }
+  };
 
   return (
     <div className="app bg-primary overflow-x-hidden">
@@ -73,6 +73,6 @@ const App: FC = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default App;

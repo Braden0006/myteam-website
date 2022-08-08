@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 import Menu from "../Menu/Menu";
 
@@ -7,7 +7,7 @@ interface Props {
   setMenu: (menu: boolean) => void;
 }
 
-export default function Navbar(props: Props) {
+const Navbar: FC<Props> = ({ menu, setMenu }) => {
   return (
     <div className="flex py-8 items-center w-11/12 justify-between">
       <svg
@@ -25,7 +25,7 @@ export default function Navbar(props: Props) {
         />
       </svg>
       <svg
-        onClick={() => props.setMenu(!props.menu)}
+        onClick={() => setMenu(!menu)}
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="17"
@@ -35,7 +35,9 @@ export default function Navbar(props: Props) {
         </g>
       </svg>
 
-      {props.menu ? <Menu menu={props.menu} setMenu={props.setMenu} /> : null}
+      {menu ? <Menu menu={menu} setMenu={setMenu} /> : null}
     </div>
   );
-}
+};
+
+export default Navbar;
