@@ -9,6 +9,7 @@ module.exports = {
         lightred: '#F67E7E',
         darkgreen: '#012F34',
         cyan: '#79C8C7',
+        transparentwhite: '#FFFFFF01',
       },
       height: {
         "10v": "10vh",

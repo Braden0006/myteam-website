@@ -5,6 +5,7 @@ import Homepage from "./Components/Homepage/Homepage";
 import Homepage2 from "./Components/Homepage2/Homepage2";
 import Homepage3 from "./Components/Homepage3/Homepage3";
 import ContactSection from "./Components/ContactSection/ContactSection";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Homepage3 />
         <ContactSection />
       </section>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
