@@ -13,6 +13,8 @@ import About from "./Components/About/About";
 import AboutDirectors from "./Components/AboutDirectors/AboutDirectors";
 import AboutClients from "./Components/AboutClients/AboutClients";
 
+import Contact from "./Components/Contact/Contact";
+
 function App() {
   return (
     <div className="app bg-primary overflow-hidden">
@@ -41,6 +43,15 @@ function App() {
               <AboutDirectors />
               <AboutClients />
               <ContactSection />
+            </section>
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            <section className="app-contact">
+              <Contact />
             </section>
           }
         />
