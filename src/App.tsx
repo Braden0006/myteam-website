@@ -10,6 +10,7 @@ import ContactSection from "./Components/ContactSection/ContactSection";
 import Footer from "./Components/Footer/Footer";
 
 import About from "./Components/About/About";
+import AboutDirectors from "./Components/AboutDirectors/AboutDirectors";
 
 function App() {
   return (
@@ -30,12 +31,18 @@ function App() {
             </section>
           }
         />
-        
-        <Route path='/about' element={
-          <section className="app-about">
-            <About />
-          </section>
-        } />
+
+        <Route
+          path="/about"
+          element={
+            <section className="app-about">
+              <About />
+              <div>
+                <AboutDirectors />
+              </div>
+            </section>
+          }
+        />
       </Routes>
 
       <footer>

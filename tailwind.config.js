@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: '#014E56',
         darkergreen: '#012F34',
+        lightergreen: '#004047',
         lightred: '#F67E7E',
         darkgreen: '#012F34',
         cyan: '#79C8C7',
@@ -22,6 +23,7 @@ module.exports = {
         "70v": "70vh",
         "80v": "80vh",
         "90v": "90vh",
+        '96px': '96px',
         "100v": "100vh",
       },
       width: {
@@ -44,11 +46,12 @@ module.exports = {
       },
       fontSize: {
         '40': '2.5rem',
-        '32': '32px',
+        '32': '2rem',
         '15': '15px',
       },
       inset: {
-        '100px': '100px'
+        '100px': '100px',
+        '26': '6.5rem',
       }
     },
   },

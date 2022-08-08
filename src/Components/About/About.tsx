@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about relative h-screen flex flex-col items-center justify-center">
+    <div className="about h-screen relative flex flex-col items-center justify-center">
       <h1 className="about__title mb-4 text-40 text-white font-livvic font-bold">
         About
       </h1>
@@ -12,6 +12,8 @@ export default function About() {
         deliver incredible outcomes. Talented, diverse teams shape the best
         products and experiences. We’ll bring those teams to you.
       </p>
+      
+      <div className="absolute bottom-0 left-0 z-10 bg-primary w-50v h-28"></div>
 
       <svg
         className="about__pattern absolute -bottom-24 -right-24"
