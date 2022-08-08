@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../ContactForm/ContactForm";
 
 export default function Contact() {
   return (
@@ -7,6 +8,7 @@ export default function Contact() {
       <h2 className="text-32 font-livvic font-bold text-lightred">
         Ask about us
       </h2>
+
       <div>
         <section className="flex items-center justify-around mt-10 w-90v">
           <svg xmlns="http://www.w3.org/2000/svg" width="65" height="72">
@@ -57,6 +59,8 @@ export default function Contact() {
           </p>
         </section>
       </div>
+
+      <ContactForm />
     </main>
   );
 }
