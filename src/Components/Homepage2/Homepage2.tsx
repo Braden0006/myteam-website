@@ -4,24 +4,27 @@ import Homepage2Cards from "../Homepage2Cards/Homepage2Cards";
 
 export default function Homepage2() {
   return (
-    <div className="relative flex flex-col items-center bg-darkgreen">
-      <div className="w-90v mt-16 md:w-70v md:mt-24">
-        <svg
-          width="50"
-          height="4"
-          viewBox="0 0 50 4"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="50" height="4" fill="#F67E7E" />
-        </svg>
-        <h1 className="text-white text-32 mt-4 w-3/5 leading-9 font-livvic font-bold md:w-90% md:mt-10">
-          Build & manage distributed teams like no one else.
-        </h1>
+    <div className="relative flex flex-col items-center bg-darkgreen lg:flex-row lg:h-screen">
+      <div className="w-90v mt-16 md:w-70v md:mt-24 lg:w-50% lg:mt-0 lg:h-50% lg:flex lg:flex-col lg:items-center">
+        <div className="lg:w-60% lg:relative">
+          <svg
+            className="lg:absolute lg:left-0"
+            width="50"
+            height="4"
+            viewBox="0 0 50 4"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="50" height="4" fill="#F67E7E" />
+          </svg>
+          <h1 className="text-white text-32 mt-4 w-3/5 leading-9 font-livvic font-bold md:w-90% md:mt-10 lg:w-auto lg:text-5xl lg:leading-12">
+            Build & manage distributed teams like no one else.
+          </h1>
+        </div>
       </div>
 
       <svg
-        className="absolute -right-100px"
+        className="absolute -right-100px lg:bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         width="200"
         height="244"

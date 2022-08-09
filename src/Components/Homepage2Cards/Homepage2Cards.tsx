@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Homepage2Cards() {
   return (
-    <div className="homepage-card-container mt-16 md:flex md:flex-col md:items-center">
-      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8">
+    <div className="homepage-card-container mt-16 md:flex md:flex-col md:items-center lg:w-50% lg:h-full lg:justify-center lg:mt-0">
+      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8 lg:w-auto lg:mb-8">
         <svg xmlns="http://www.w3.org/2000/svg" width="65" height="72">
           <g fill="none" fillRule="evenodd" transform="translate(-7)">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -16,8 +16,8 @@ export default function Homepage2Cards() {
           </g>
         </svg>
 
-        <div className="flex flex-col items-center md:items-start md:w-80%">
-          <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
+        <div className="flex flex-col items-center md:items-start md:w-80% lg:w-50%">
+          <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg lg:mt-0">
             Experienced Individuals
           </h2>
           <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15 md:text-left">
@@ -27,7 +27,7 @@ export default function Homepage2Cards() {
         </div>
       </div>
 
-      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8">
+      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8 lg:w-auto lg:mb-8">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <g fill="none" fillRule="evenodd">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -39,7 +39,7 @@ export default function Homepage2Cards() {
           </g>
         </svg>
 
-        <div className="flex flex-col items-center md:items-start md:w-80%">
+        <div className="flex flex-col items-center md:items-start md:w-80% lg:w-50%">
           <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
             Easy to Implement
           </h2>
@@ -50,7 +50,7 @@ export default function Homepage2Cards() {
         </div>
       </div>
 
-      <div className="homepage-card flex flex-col items-center w-90v mb-24 md:flex-row md:w-70v md:gap-8">
+      <div className="homepage-card flex flex-col items-center w-90v mb-24 md:flex-row md:w-70v md:gap-8 lg:w-auto lg:mb-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <g fill="none" fillRule="evenodd">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -62,7 +62,7 @@ export default function Homepage2Cards() {
           </g>
         </svg>
 
-        <div className="flex flex-col items-center md:items-start md:w-80%">
+        <div className="flex flex-col items-center md:items-start md:w-80% lg:w-50%">
           <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
             Enhanced Productivity
           </h2>
