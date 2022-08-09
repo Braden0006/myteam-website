@@ -5,7 +5,7 @@ import Homepage2Cards from "../Homepage2Cards/Homepage2Cards";
 export default function Homepage2() {
   return (
     <div className="relative flex flex-col items-center bg-darkgreen">
-      <div className="w-90v mt-16">
+      <div className="w-90v mt-16 md:w-70v md:mt-24">
         <svg
           width="50"
           height="4"
@@ -15,7 +15,7 @@ export default function Homepage2() {
         >
           <rect width="50" height="4" fill="#F67E7E" />
         </svg>
-        <h1 className="text-white text-32 mt-4 w-3/5 leading-9 font-livvic font-bold">
+        <h1 className="text-white text-32 mt-4 w-3/5 leading-9 font-livvic font-bold md:w-90% md:mt-10">
           Build & manage distributed teams like no one else.
         </h1>
       </div>

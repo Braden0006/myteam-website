@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Homepage2Cards() {
   return (
-    <div className="homepage-card-container mt-16">
-      <div className="homepage-card flex flex-col items-center w-90v mb-12">
+    <div className="homepage-card-container mt-16 md:flex md:flex-col md:items-center">
+      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8">
         <svg xmlns="http://www.w3.org/2000/svg" width="65" height="72">
           <g fill="none" fillRule="evenodd" transform="translate(-7)">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -15,16 +15,19 @@ export default function Homepage2Cards() {
             <path d="M0 0h56v56H0z" />
           </g>
         </svg>
-        <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
-          Experienced Individuals
-        </h2>
-        <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15">
-          Our network is made up of highly experienced professionals who are
-          passionate about what they do.
-        </p>
+
+        <div className="flex flex-col items-center md:items-start md:w-80%">
+          <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
+            Experienced Individuals
+          </h2>
+          <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15 md:text-left">
+            Our network is made up of highly experienced professionals who are
+            passionate about what they do.
+          </p>
+        </div>
       </div>
 
-      <div className="homepage-card flex flex-col items-center w-90v mb-12">
+      <div className="homepage-card flex flex-col items-center w-90v mb-12 md:flex-row md:w-70v md:gap-8">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <g fill="none" fillRule="evenodd">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -35,16 +38,19 @@ export default function Homepage2Cards() {
             />
           </g>
         </svg>
-        <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
-          Easy to Implement
-        </h2>
-        <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15">
-          Our processes have been refined over years of implementation meaning
-          our teams always deliver.
-        </p>
+
+        <div className="flex flex-col items-center md:items-start md:w-80%">
+          <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
+            Easy to Implement
+          </h2>
+          <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15 md:text-left">
+            Our processes have been refined over years of implementation meaning
+            our teams always deliver.
+          </p>
+        </div>
       </div>
 
-      <div className="homepage-card flex flex-col items-center w-90v mb-12">
+      <div className="homepage-card flex flex-col items-center w-90v mb-24 md:flex-row md:w-70v md:gap-8">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
           <g fill="none" fillRule="evenodd">
             <circle cx="44" cy="44" r="28" fill="#2C6269" />
@@ -55,13 +61,16 @@ export default function Homepage2Cards() {
             />
           </g>
         </svg>
-        <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
-          Enhanced Productivity
-        </h2>
-        <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15">
-          Our customized platform with in-built analytics helps you manage your
-          distributed teams.
-        </p>
+
+        <div className="flex flex-col items-center md:items-start md:w-80%">
+          <h2 className="homepage-card__title my-4 text-lightred font-livvic font-bold text-lg">
+            Enhanced Productivity
+          </h2>
+          <p className="homepage-card__info leading-6 text-center font-livvic text-white text-15 md:text-left">
+            Our customized platform with in-built analytics helps you manage
+            your distributed teams.
+          </p>
+        </div>
       </div>
     </div>
   );
