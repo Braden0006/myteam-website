@@ -10,7 +10,7 @@ export default function AboutClients() {
   return (
     <div className="relative flex flex-col items-center justify-center bg-darkergreen">
       <svg
-        className="absolute -top-28 -left-100px"
+        className="absolute -top-28 -left-100px md:left-0"
         xmlns="http://www.w3.org/2000/svg"
         width="200"
         height="200"
@@ -30,19 +30,33 @@ export default function AboutClients() {
       <h2 className="text-32 mb-12 mt-20 font-livvic font-bold text-white">
         Some of our clients
       </h2>
-      <img className="h-5 mb-12" src={Verge} alt="A logo of the verge" />
-      <img
-        className="h-5 mb-12"
-        src={Jakarta}
-        alt="A logo of the jakarta post"
-      />
-      <img className="h-5 mb-12" src={Guardian} alt="A logo of the guardian" />
-      <img className="h-5 mb-12" src={Tech} alt="A logo of the tech radar" />
-      <img
-        className="h-8 mb-16"
-        src={Gadgets}
-        alt="A logo of the gadgets now"
-      />
+      <div className="flex flex-col items-center md:flex-row md:gap-8 md:justify-center md:mb-24">
+        <img
+          className="h-5 mb-12 md:mb-0"
+          src={Verge}
+          alt="A logo of the verge"
+        />
+        <img
+          className="h-5 mb-12 md:mb-0"
+          src={Jakarta}
+          alt="A logo of the jakarta post"
+        />
+        <img
+          className="h-5 mb-12 md:mb-0"
+          src={Guardian}
+          alt="A logo of the guardian"
+        />
+        <img
+          className="h-5 mb-12 md:mb-0"
+          src={Tech}
+          alt="A logo of the tech radar"
+        />
+        <img
+          className="h-8 mb-16 md:mb-0"
+          src={Gadgets}
+          alt="A logo of the gadgets now"
+        />
+      </div>
     </div>
   );
 }
