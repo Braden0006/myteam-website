@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { motion } from "framer-motion";
 
@@ -7,12 +7,39 @@ interface Props {
   setMenu: (menu: boolean) => void;
 }
 
-export default function Menu(props: Props) {
+const Menu: FC<Props> = ({ menu, setMenu }: Props) => {
+  const variants = {
+    open: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 50,
+        stiffness: 500,
+      },
+    },
+    closed: {
+      opacity: 0,
+      x: "100%",
+    },
+    exit: {
+      opacity: 1,
+      x: "100%",
+    },
+  };
+
   return (
-    <motion.div className="menu-background fixed flex justify-end h-screen w-screen top-0 left-0 bottom-0 right-0 bg-transparentblack">
+    <motion.div
+      className="menu-background fixed flex justify-end h-screen w-screen top-0 left-0 bottom-0 right-0 bg-transparentblack"
+      initial="closed"
+      animate="open"
+      exit="exit"
+      variants={variants}
+    >
       <div className="menu-overlay relative w-8/12 flex flex-col items-center bg-menugreen">
         <svg
-          onClick={() => props.setMenu(!props.menu)}
+          onClick={() => setMenu(!menu)}
           className="absolute right-4 top-10"
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -55,4 +82,6 @@ export default function Menu(props: Props) {
       </div>
     </motion.div>
   );
-}
+};
+
+export default Menu;

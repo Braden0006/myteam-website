@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 
+import { AnimatePresence } from "framer-motion";
+
 import Menu from "../Menu/Menu";
 
 interface Props {
@@ -35,7 +37,13 @@ const Navbar: FC<Props> = ({ menu, setMenu }) => {
         </g>
       </svg>
 
-      {menu ? <Menu menu={menu} setMenu={setMenu} /> : null}
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      >
+        {menu && <Menu menu={menu} setMenu={setMenu} />}
+      </AnimatePresence>
     </div>
   );
 };
