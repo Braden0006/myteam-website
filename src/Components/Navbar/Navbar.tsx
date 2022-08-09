@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-
+import { useMediaQuery } from "react-responsive";
 import { AnimatePresence } from "framer-motion";
 
 import Menu from "../Menu/Menu";
@@ -10,6 +10,9 @@ interface Props {
 }
 
 const Navbar: FC<Props> = ({ menu, setMenu }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768 });
+
   return (
     <div className="flex py-8 items-center w-11/12 justify-between">
       <svg
@@ -42,7 +45,7 @@ const Navbar: FC<Props> = ({ menu, setMenu }) => {
         exitBeforeEnter={true}
         onExitComplete={() => null}
       >
-        {menu && <Menu menu={menu} setMenu={setMenu} />}
+        {menu && isMobile && <Menu menu={menu} setMenu={setMenu} />}
       </AnimatePresence>
     </div>
   );

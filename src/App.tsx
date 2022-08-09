@@ -1,8 +1,11 @@
 import React, { FC, useState } from "react";
+import MediaQuery from "react-responsive";
 
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
+import NavbarTablet from "./ResponsiveComponents/NavbarTablet";
+
 import Homepage from "./Components/Homepage/Homepage";
 import Homepage2 from "./Components/Homepage2/Homepage2";
 import Homepage3 from "./Components/Homepage3/Homepage3";
@@ -30,7 +33,13 @@ const App: FC = () => {
   return (
     <div className="app bg-primary overflow-x-hidden">
       <nav className="app-navbar absolute top-0 z-10 w-screen flex bg-primary justify-center align-center">
-        <Navbar menu={menu} setMenu={setMenu} />
+        <MediaQuery maxWidth={767}>
+          <Navbar menu={menu} setMenu={setMenu} />
+        </MediaQuery>
+
+        <MediaQuery minWidth={768}>
+          <NavbarTablet />
+        </MediaQuery>
       </nav>
 
       <Routes>
