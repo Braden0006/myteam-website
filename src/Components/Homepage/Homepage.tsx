@@ -5,11 +5,11 @@ export default function Homepage() {
     <div className="flex items-center justify-center bg-primary relative h-screen">
 
       <div className="flex flex-col items-center w-screen text-center mb-8">
-        <h1 className="text-white text-4xl mb-5 w-55v font-livvic font-bold">
+        <h1 className="text-white text-4xl mb-5 w-55v font-livvic font-bold md:text-64 md:leading-16 md:w-50v md:mb-8">
           Find the best{" "}
           <span className="homepage__title__word text-lightred">talent</span>
         </h1>
-        <p className="text-white text-center text-sm w-78v leading-7 font-livvic">
+        <p className="text-white text-center text-sm w-78v leading-7 font-livvic md:text-base md:leading-8 md:w-60v">
           Finding the right people and building high performing teams can be
           hard. Most companies aren’t tapping into the abundance of global
           talent. We’re about to change that.
@@ -17,7 +17,7 @@ export default function Homepage() {
       </div>
 
       <svg
-        className="absolute bottom-0 w-screen"
+        className="absolute bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         width="358"
         height="100"
