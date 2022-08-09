@@ -69,7 +69,7 @@ export default function Homepage3Cards() {
         />
       </div>
 
-      <div className="homepage3Cards__card relative flex flex-col items-center justify-center mb-28">
+      <div className="homepage3Cards__card relative flex flex-col items-center justify-center mb-28 md:mb-16">
         <svg
           className="homepage3Cards__card__pattern absolute top-0"
           xmlns="http://www.w3.org/2000/svg"
