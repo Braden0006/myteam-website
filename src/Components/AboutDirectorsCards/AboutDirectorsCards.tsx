@@ -9,7 +9,7 @@ import Griffin from "../../Images/avatar-griffin.jpg";
 
 export default function AboutDirectorsCards() {
   return (
-    <div className="w-90v mt-12">
+    <div className="w-90v mt-12 md:grid md:grid-cols-2 md:gap-4 md:w-80v">
       <div className="relative flex flex-col items-center justify-center mb-14 bg-darkergreen">
         <img
           className="h-96px border-2 border-cyan rounded-full mt-8 mb-4"
@@ -100,7 +100,7 @@ export default function AboutDirectorsCards() {
         </span>
       </div>
 
-      <div className="relative flex flex-col items-center justify-center mb-14 bg-darkergreen">
+      <div className="relative flex flex-col items-center justify-center mb-14 bg-darkergreen md:mb-32">
         <img
           className="h-96px border-2 border-cyan rounded-full mt-8 mb-4"
           src={Griffin}
