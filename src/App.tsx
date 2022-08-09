@@ -19,6 +19,7 @@ import Contact from "./Components/Contact/Contact";
 
 import NavbarTablet from "./ResponsiveComponents/NavbarTablet";
 import FooterTablet from "./ResponsiveComponents/FooterTablet";
+import FooterDesktop from "./ResponsiveComponents/FooterDesktop";
 
 interface Props {
   menu: boolean;
@@ -84,8 +85,12 @@ const App: FC = () => {
           <Footer />
         </MediaQuery>
 
-        <MediaQuery minWidth={768}>
+        <MediaQuery minWidth={768} maxWidth={1023}>
           <FooterTablet />
+        </MediaQuery>
+
+        <MediaQuery minWidth={1024}>
+          <FooterDesktop />
         </MediaQuery>
       </footer>
     </div>
