@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 const NavbarTablet: FC = () => {
   return (
-    <div className="flex py-14 items-center w-11/12 justify-between">
+    <div className="flex py-14 items-center w-11/12 justify-between lg:w-80v lg:py-20">
       <div className="flex items-center">
         <svg
           className="mr-8"

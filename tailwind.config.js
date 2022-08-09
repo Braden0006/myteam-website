@@ -58,6 +58,7 @@ module.exports = {
         'livvic': ['Livvic', 'sans-serif'],
       },
       fontSize: {
+        '100': '6.25rem',
         '64': '4rem',
         '40': '2.5rem',
         '32': '2rem',
@@ -70,6 +71,8 @@ module.exports = {
       lineHeight: {
         '12': '3rem',
         '16': '4rem',
+        '20': '5rem',
+        '24': '6rem',
       },
       zIndex: {
         '1': '1',

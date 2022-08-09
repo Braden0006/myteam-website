@@ -4,20 +4,21 @@ import MediaQuery from "react-responsive";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
-import NavbarTablet from "./ResponsiveComponents/NavbarTablet";
 
 import Homepage from "./Components/Homepage/Homepage";
 import Homepage2 from "./Components/Homepage2/Homepage2";
 import Homepage3 from "./Components/Homepage3/Homepage3";
 import ContactSection from "./Components/ContactSection/ContactSection";
 import Footer from "./Components/Footer/Footer";
-import FooterTablet from "./ResponsiveComponents/FooterTablet";
 
 import About from "./Components/About/About";
 import AboutDirectors from "./Components/AboutDirectors/AboutDirectors";
 import AboutClients from "./Components/AboutClients/AboutClients";
 
 import Contact from "./Components/Contact/Contact";
+
+import NavbarTablet from "./ResponsiveComponents/NavbarTablet";
+import FooterTablet from "./ResponsiveComponents/FooterTablet";
 
 interface Props {
   menu: boolean;
