@@ -11,6 +11,7 @@ import Homepage2 from "./Components/Homepage2/Homepage2";
 import Homepage3 from "./Components/Homepage3/Homepage3";
 import ContactSection from "./Components/ContactSection/ContactSection";
 import Footer from "./Components/Footer/Footer";
+import FooterTablet from "./ResponsiveComponents/FooterTablet";
 
 import About from "./Components/About/About";
 import AboutDirectors from "./Components/AboutDirectors/AboutDirectors";
@@ -78,7 +79,13 @@ const App: FC = () => {
       </Routes>
 
       <footer>
-        <Footer />
+        <MediaQuery maxWidth={767}>
+          <Footer />
+        </MediaQuery>
+
+        <MediaQuery minWidth={768}>
+          <FooterTablet />
+        </MediaQuery>
       </footer>
     </div>
   );
