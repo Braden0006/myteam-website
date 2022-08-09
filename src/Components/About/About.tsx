@@ -3,20 +3,20 @@ import React from "react";
 export default function About() {
   return (
     <div className="about h-screen relative flex flex-col items-center justify-center">
-      <h1 className="about__title mb-4 text-40 text-white font-livvic font-bold">
+      <h1 className="about__title mb-4 text-40 text-white font-livvic font-bold md:text-64">
         About
       </h1>
-      <p className="about__info w-90v leading-7 text-center text-white font-livvic">
+      <p className="about__info w-90v leading-7 text-center text-white font-livvic md:w-60v">
         We help companies build dynamic teams made up of top global talent.
         Using our network of passionate professionals we drive innovation and
         deliver incredible outcomes. Talented, diverse teams shape the best
         products and experiences. We’ll bring those teams to you.
       </p>
-      
+
       <div className="absolute bottom-0 left-0 z-10 bg-primary w-50v h-28"></div>
 
       <svg
-        className="about__pattern absolute -bottom-24 -right-24"
+        className="about__pattern absolute -bottom-24 -right-24 md:bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         width="200"
         height="200"
