@@ -8,9 +8,9 @@ import Verge from "../../Images/logo-the-verge.png";
 
 export default function AboutClients() {
   return (
-    <div className="relative flex flex-col items-center justify-center bg-darkergreen">
+    <div className="relative flex flex-col items-center justify-center bg-darkergreen lg:h-50v">
       <svg
-        className="absolute -top-28 -left-100px md:left-0"
+        className="absolute -top-28 -left-100px md:left-0 lg:-top-12 xl:top-0"
         xmlns="http://www.w3.org/2000/svg"
         width="200"
         height="200"
@@ -27,10 +27,10 @@ export default function AboutClients() {
           />
         </g>
       </svg>
-      <h2 className="text-32 mb-12 mt-20 font-livvic font-bold text-white">
+      <h2 className="text-32 mb-12 mt-20 font-livvic font-bold text-white lg:text-5xl">
         Some of our clients
       </h2>
-      <div className="flex flex-col items-center md:flex-row md:gap-8 md:justify-center md:mb-24">
+      <div className="flex flex-col items-center md:flex-row md:gap-8 md:justify-center md:mb-24 lg:gap-16 xl:gap-24">
         <img
           className="h-5 mb-12 md:mb-0"
           src={Verge}
