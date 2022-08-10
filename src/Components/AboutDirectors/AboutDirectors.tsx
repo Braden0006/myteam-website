@@ -27,7 +27,7 @@ export default function AboutDirectors() {
           />
         </g>
       </svg>
-      <h2 className="about-direct__title mt-20 text-32 text-white font-livvic font-bold md:mt-24">
+      <h2 className="about-direct__title mt-20 text-32 text-white font-livvic font-bold md:mt-24 lg:text-5xl">
         Meet the directors
       </h2>
 
