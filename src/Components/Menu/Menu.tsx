@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -53,12 +53,22 @@ const Menu: FC<Props> = ({ menu, setMenu }: Props) => {
         </svg>
 
         <ul className="absolute top-32 w-8/12">
-          <li className="text-white font-livvic pb-6">home</li>
-          <li className="text-white font-livvic">about</li>
+          <li className="text-white font-livvic pb-6">
+            <Link to="/" onClick={() => setMenu(!menu)}>
+              home
+            </Link>
+          </li>
+          <li className="text-white font-livvic">
+            <Link to="/about" onClick={() => setMenu(!menu)}>
+              about
+            </Link>
+          </li>
         </ul>
 
         <button className="absolute top-56 w-8/12 border-white border-2 rounded-3xl py-1.5 px-8 text-lg text-white font-livvic font-bold">
-          contact us
+          <Link to="/contact" onClick={() => setMenu(!menu)}>
+            contact us
+          </Link>
         </button>
 
         <svg

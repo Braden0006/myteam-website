@@ -32,7 +32,7 @@ export default function About() {
         </div>
 
         {isMobile && (
-          <div className="absolute bottom-0 left-0 z-10 bg-primary w-50v h-28"></div>
+          <div className="absolute bottom-0 left-0 z-2 bg-primary w-50v h-28"></div>
         )}
 
         <svg
