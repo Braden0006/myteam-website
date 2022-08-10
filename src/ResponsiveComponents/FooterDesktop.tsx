@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function FooterTablet() {
   return (
@@ -21,8 +22,12 @@ export default function FooterTablet() {
           </svg>
 
           <div className="footer__links flex justify-center mb-8 text-white font-livvic font-bold lg:mb-0 lg:justify-start">
-            <span className="footer__links__link pr-4 lg:text-lg">home</span>
-            <span className="footer__links__link lg:text-lg">about</span>
+            <span className="footer__links__link pr-4 lg:text-lg">
+              <Link to="/">home</Link>
+            </span>
+            <span className="footer__links__link lg:text-lg">
+              <Link to="/about">about</Link>
+            </span>
           </div>
         </div>
 

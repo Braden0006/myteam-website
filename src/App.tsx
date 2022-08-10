@@ -22,6 +22,8 @@ import FooterTablet from "./ResponsiveComponents/FooterTablet";
 import FooterDesktop from "./ResponsiveComponents/FooterDesktop";
 import ContactDesktop from "./ResponsiveComponents/ContactDesktop";
 
+import ScrollToTop from "./Modules/ScrollToTop";
+
 interface Props {
   menu: boolean;
   setMenu: (menu: boolean) => void;
@@ -35,72 +37,74 @@ const App: FC = () => {
   };
 
   return (
-    <div className="app bg-primary overflow-x-hidden">
-      <nav className="app-navbar absolute top-0 z-10 w-screen flex bg-primary justify-center align-center">
-        <MediaQuery maxWidth={767}>
-          <Navbar menu={menu} setMenu={setMenu} />
-        </MediaQuery>
+    <ScrollToTop>
+      <div className="app bg-primary overflow-x-hidden">
+        <nav className="app-navbar absolute top-0 z-10 w-screen flex bg-primary justify-center align-center">
+          <MediaQuery maxWidth={767}>
+            <Navbar menu={menu} setMenu={setMenu} />
+          </MediaQuery>
 
-        <MediaQuery minWidth={768}>
-          <NavbarTablet />
-        </MediaQuery>
-      </nav>
+          <MediaQuery minWidth={768}>
+            <NavbarTablet />
+          </MediaQuery>
+        </nav>
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <section className="app-homepage">
-              <Homepage />
-              <Homepage2 />
-              <Homepage3 />
-              <ContactSection />
-            </section>
-          }
-        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <section className="app-homepage">
+                <Homepage />
+                <Homepage2 />
+                <Homepage3 />
+                <ContactSection />
+              </section>
+            }
+          />
 
-        <Route
-          path="/about"
-          element={
-            <section className="app-about">
-              <About />
-              <AboutDirectors />
-              <AboutClients />
-              <ContactSection />
-            </section>
-          }
-        />
+          <Route
+            path="/about"
+            element={
+              <section className="app-about">
+                <About />
+                <AboutDirectors />
+                <AboutClients />
+                <ContactSection />
+              </section>
+            }
+          />
 
-        <Route
-          path="/contact"
-          element={
-            <section className="app-contact lg:flex lg:justify-center">
-              <MediaQuery maxWidth={1023}>
-                <Contact />
-              </MediaQuery>
+          <Route
+            path="/contact"
+            element={
+              <section className="app-contact lg:flex lg:justify-center">
+                <MediaQuery maxWidth={1023}>
+                  <Contact />
+                </MediaQuery>
 
-              <MediaQuery minWidth={1024}>
-                <ContactDesktop />
-              </MediaQuery>
-            </section>
-          }
-        />
-      </Routes>
+                <MediaQuery minWidth={1024}>
+                  <ContactDesktop />
+                </MediaQuery>
+              </section>
+            }
+          />
+        </Routes>
 
-      <footer>
-        <MediaQuery maxWidth={767}>
-          <Footer />
-        </MediaQuery>
+        <footer>
+          <MediaQuery maxWidth={767}>
+            <Footer />
+          </MediaQuery>
 
-        <MediaQuery minWidth={768} maxWidth={1023}>
-          <FooterTablet />
-        </MediaQuery>
+          <MediaQuery minWidth={768} maxWidth={1023}>
+            <FooterTablet />
+          </MediaQuery>
 
-        <MediaQuery minWidth={1024}>
-          <FooterDesktop />
-        </MediaQuery>
-      </footer>
-    </div>
+          <MediaQuery minWidth={1024}>
+            <FooterDesktop />
+          </MediaQuery>
+        </footer>
+      </div>
+    </ScrollToTop>
   );
 };
 

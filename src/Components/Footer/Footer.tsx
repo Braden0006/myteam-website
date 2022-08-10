@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -21,8 +22,12 @@ export default function Footer() {
       </span>
 
       <div className="footer__links flex justify-center text-white font-livvic font-bold">
-        <span className="footer__links__link pr-4">home</span>
-        <span className="footer__links__link">about</span>
+        <span className="footer__links__link pr-4">
+          <Link to="/">home</Link>
+        </span>
+        <span className="footer__links__link">
+          <Link to="/about">about</Link>
+        </span>
       </div>
 
       <div className="footer__address text-center my-8 text-footercolor font-livvic font-bold">
