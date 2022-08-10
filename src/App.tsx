@@ -20,6 +20,7 @@ import Contact from "./Components/Contact/Contact";
 import NavbarTablet from "./ResponsiveComponents/NavbarTablet";
 import FooterTablet from "./ResponsiveComponents/FooterTablet";
 import FooterDesktop from "./ResponsiveComponents/FooterDesktop";
+import ContactDesktop from "./ResponsiveComponents/ContactDesktop";
 
 interface Props {
   menu: boolean;
@@ -73,8 +74,14 @@ const App: FC = () => {
         <Route
           path="/contact"
           element={
-            <section className="app-contact">
-              <Contact />
+            <section className="app-contact lg:flex lg:justify-center">
+              <MediaQuery maxWidth={1023}>
+                <Contact />
+              </MediaQuery>
+
+              <MediaQuery minWidth={1024}>
+                <ContactDesktop />
+              </MediaQuery>
             </section>
           }
         />

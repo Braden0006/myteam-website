@@ -2,34 +2,34 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <div>
+    <div className="lg:h-90%">
       <form className="relative mb-24 flex flex-col items-center" action="">
         <input
-          className="w-90v bg-primary border-b-2 outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v"
+          className="w-90v bg-primary border-b outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v lg:w-full"
           type="text"
           placeholder="Name"
         />
 
         <input
-          className="w-90v bg-primary border-b-2 outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v"
+          className="w-90v bg-primary border-b outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v lg:w-full"
           type="email"
           placeholder="Email Address"
         />
 
         <input
-          className="w-90v bg-primary border-b-2 outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v"
+          className="w-90v bg-primary border-b outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v lg:w-full"
           type="text"
           placeholder="Company Name"
         />
 
         <input
-          className="w-90v bg-primary border-b-2 outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v"
+          className="w-90v bg-primary border-b outline-none border-white font-livvic py-4 pl-4 mb-8 text-white md:w-65v lg:w-full"
           type="text"
           placeholder="Title"
         />
 
         <textarea
-          className="w-90v bg-primary border-b-2 outline-none border-white font-livvic pt-4 pb-10 pl-4 mb-20 text-white md:w-65v"
+          className="w-90v bg-primary border-b outline-none border-white font-livvic pt-4 pb-10 pl-4 mb-20 text-white md:w-65v lg:w-full"
           placeholder="Message"
         />
 
