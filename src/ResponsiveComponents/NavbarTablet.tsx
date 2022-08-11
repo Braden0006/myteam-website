@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useMediaQuery } from "react-responsive";
-import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const NavbarTablet: FC = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -45,14 +45,20 @@ const NavbarTablet: FC = () => {
         )}
 
         <ul className="flex">
-          <li className="text-lg text-white font-livvic mr-6">home</li>
-          <li className="text-lg text-white font-livvic">about</li>
+          <li className="text-lg text-white font-livvic mr-6">
+            <Link to="/">home</Link>
+          </li>
+          <li className="text-lg text-white font-livvic">
+            <Link to="/about">about</Link>
+          </li>
         </ul>
       </div>
 
-      <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic">
-        contact us
-      </button>
+      <Link to="/contact">
+        <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic">
+          contact us
+        </button>
+      </Link>
     </div>
   );
 };
