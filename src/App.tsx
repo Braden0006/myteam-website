@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import MediaQuery from "react-responsive";
 
 import { Routes, Route } from "react-router-dom";
+import { DirectorsContext } from "./Context/DirectorsContext";
 
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -27,10 +28,35 @@ import ScrollToTop from "./Modules/ScrollToTop";
 interface Props {
   menu: boolean;
   setMenu: (menu: boolean) => void;
+
+  nikita: boolean;
+  setNikita: (nikita: boolean) => void;
+
+  christian: boolean;
+  setChristian: (christian: boolean) => void;
+
+  cruz: boolean;
+  setCruz: (cruz: boolean) => void;
+
+  drake: boolean;
+  setDrake: (drake: boolean) => void;
+
+  griffin: boolean;
+  setGriffin: (griffin: boolean) => void;
+
+  aden: boolean;
+  setAden: (aden: boolean) => void;
 }
 
 const App: FC = () => {
   const [menu, setMenu] = useState<boolean>(false);
+
+  const [nikita, setNikita] = useState<boolean>(false);
+  const [christian, setChristian] = useState<boolean>(false);
+  const [cruz, setCruz] = useState<boolean>(false);
+  const [drake, setDrake] = useState<boolean>(false);
+  const [griffin, setGriffin] = useState<boolean>(false);
+  const [aden, setAden] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -67,7 +93,24 @@ const App: FC = () => {
             element={
               <section className="app-about">
                 <About />
-                <AboutDirectors />
+                <DirectorsContext.Provider
+                  value={{
+                    nikita,
+                    setNikita,
+                    christian,
+                    setChristian,
+                    cruz,
+                    setCruz,
+                    drake,
+                    setDrake,
+                    griffin,
+                    setGriffin,
+                    aden,
+                    setAden,
+                  }}
+                >
+                  <AboutDirectors />
+                </DirectorsContext.Provider>
                 <AboutClients />
                 <ContactSection />
               </section>
