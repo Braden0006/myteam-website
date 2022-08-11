@@ -6,7 +6,7 @@ export default function ContactSection() {
       <h1 className="contact-section__title w-70v mt-24 mb-4 text-center text-32 leading-8 font-livvic font-bold text-darkergreen md:mt-0 md:mb-0 md:w-50% lg:text-5xl lg:text-left">
         Ready to get started?
       </h1>
-      <button className="contact-section__button mb-24 border-darkergreen border-2 rounded-3xl py-1.5 px-8 text-lg text-darkergreen font-livvic font-bold md:mb-0">
+      <button className="contact-section__button mb-24 border-darkergreen border-2 rounded-3xl py-1.5 px-8 text-lg text-darkergreen font-livvic font-bold md:mb-0 lg:hover:bg-darkergreen lg:hover:text-white">
         contact us
       </button>
       <svg

@@ -45,17 +45,17 @@ const NavbarTablet: FC = () => {
         )}
 
         <ul className="flex">
-          <li className="text-lg text-white font-livvic mr-6">
+          <li className="text-lg text-white font-livvic mr-6 hover:text-lightred">
             <Link to="/">home</Link>
           </li>
-          <li className="text-lg text-white font-livvic">
+          <li className="text-lg text-white font-livvic hover:text-lightred">
             <Link to="/about">about</Link>
           </li>
         </ul>
       </div>
 
       <Link to="/contact">
-        <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic">
+        <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic hover:bg-white hover:text-black">
           contact us
         </button>
       </Link>
