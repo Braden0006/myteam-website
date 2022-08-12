@@ -54,9 +54,11 @@ const NavbarTablet: FC = () => {
         </ul>
       </div>
 
-      <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic hover:bg-white hover:text-black">
-        <Link to="/contact">contact us</Link>
-      </button>
+      <Link to="/contact">
+        <button className="text-lg border-2 border-white rounded-full py-1.5 px-6 text-white font-livvic hover:bg-white hover:text-black">
+          contact us
+        </button>
+      </Link>
     </div>
   );
 };
