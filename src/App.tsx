@@ -91,7 +91,7 @@ const App: FC = () => {
           <Route
             path="/about"
             element={
-              <section className="app-about">
+              <main className="app-about">
                 <About />
                 <DirectorsContext.Provider
                   value={{
@@ -113,14 +113,14 @@ const App: FC = () => {
                 </DirectorsContext.Provider>
                 <AboutClients />
                 <ContactSection />
-              </section>
+              </main>
             }
           />
 
           <Route
             path="/contact"
             element={
-              <section className="app-contact lg:flex lg:justify-center">
+              <main className="app-contact lg:flex lg:justify-center">
                 <MediaQuery maxWidth={1023}>
                   <Contact />
                 </MediaQuery>
@@ -128,7 +128,7 @@ const App: FC = () => {
                 <MediaQuery minWidth={1024}>
                   <ContactDesktop />
                 </MediaQuery>
-              </section>
+              </main>
             }
           />
         </Routes>

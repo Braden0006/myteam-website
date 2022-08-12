@@ -4,7 +4,7 @@ import Homepage3Cards from "../Homepage3Cards/Homepage3Cards";
 
 export default function Homepage3() {
   return (
-    <main className="homepage3 relative flex flex-col items-center w-screen bg-lightergreen lg:h-100v lg:justify-center">
+    <section className="homepage3 relative flex flex-col items-center w-screen bg-lightergreen lg:h-100v lg:justify-center">
       <svg
         className="homepage3__pattern absolute top-0 left-0"
         xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +49,6 @@ export default function Homepage3() {
           />
         </g>
       </svg>
-    </main>
+    </section>
   );
 }
